@@ -172,13 +172,13 @@ const AddJournals = () => {
             <input type='text' className='peer h-10 border-solid w-full border-b-2 border-gray-800 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-gray-800' placeholder=''
               value={title} name='title' onChange={(e) => { setTitle(e.target.value) }} required
             />
-            <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-500 peer-focus:text-sm">Title</label>
+            <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-950 peer-focus:text-sm">Title</label>
           </div>
           <div className='relative w-full sm:w-[70%]'>
             <textarea type='text' className='peer h-10 border-solid w-full border-b-2 border-gray-800 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-gray-800' placeholder=''
               value={description} name='description' onChange={(e) => { setDescription(e.target.value) }} required
             />
-            <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-5 peer-focus:text-cyan-500 peer-focus:text-sm">Description</label>
+            <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-5 peer-focus:text-cyan-950 peer-focus:text-sm">Description</label>
 
           </div>
           <div className='w-full sm:w-[70%] flex flex-col items-start gap-4 text-lg m-2'>
@@ -203,7 +203,7 @@ const AddJournals = () => {
               <input type='text' className='peer h-10 border-solid w-full border-b-2 border-gray-800 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-gray-800' placeholder='' required
                 value={author} name='author' onChange={(e) => { setAuthor(e.target.value) }}
               />
-              <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-500 peer-focus:text-sm">Author</label>
+              <label className="absolute left-0 -top-4 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-950 peer-focus:text-sm">Author</label>
             </div>
             <div 
                 className='relative w-full sm:w-[50%] flex flex-col items-start gap-4 text-lg m-2'
@@ -221,7 +221,7 @@ const AddJournals = () => {
                   className='w-full h-20 border-2 border-dashed border-gray-800 rounded-lg flex items-center justify-center cursor-pointer hover:bg-gray-100'
                  value={image} onClick={() => document.querySelector('input[name="image"]').click()}
                 >
-                  <label className="absolute left-0 -top-8 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-500 peer-focus:text-sm">
+                  <label className="absolute left-0 -top-8 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-950 peer-focus:text-sm">
                     Upload Image
                   </label>
                   <span id="file-name" className="text-gray-500">Drop or Upload your image</span>

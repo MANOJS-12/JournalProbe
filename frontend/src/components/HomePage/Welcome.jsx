@@ -29,7 +29,7 @@ const Welcome = () => {
             </div> 
        </div>
            <div>
-            <img src={homeimg} alt="" className='absolute z-0 top-[5rem] left-[4rem]'></img>
+            {/* <img src={homeimg} alt="" className='absolute z-0 top-[5rem] left-[4rem]'></img> */}
            </div>
         </div>
       <div>  

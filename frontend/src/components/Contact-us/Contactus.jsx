@@ -59,12 +59,12 @@ const ContactusForm = () =>{
 const Contactus = () => {
   return (
     <div className='flex flex-row sm:m-10 m-0 shadow-sm'>
-        <div className='w-[40%] bg-[#9ad5e0] text-[#000000] hidden md:flex rounded-lg justify-center items-center flex-col gap-10 text-xl'>
+        <div className='w-[40%] bg-[#9ad5e0] text-[#000000] hidden md:flex rounded-full justify-center items-center flex-col gap-10 text-xl'>
             <div className='w-[80%]'>
-                Contact Us Today for Personalized Support and Assistance
+            We value your feedback and are here to assist you with any inquiries or support you may need. Whether you have questions about our services, need help with a specific issue, or just want to share your thoughts, our team is ready to provide personalized support
             </div>
             <div>
-                <div>+91 78653498124</div>
+                <div>+1 (213) 555-3890</div>
                 <div>journalprobe@gmail.com</div>
                 <div>USA</div>
             </div>

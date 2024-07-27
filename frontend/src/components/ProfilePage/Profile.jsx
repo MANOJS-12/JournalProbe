@@ -101,7 +101,7 @@ const fetchData = async () => {
         <div className='w-[95%] rounded-xl'>
             <div className=' h-[20rem] flex flex-row shadow-xl items-center justify-center '>
                 <div className='hidden lg:block rounded-full '>
-                <img src={'https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'}
+                <img src={'https://img.freepik.com/premium-photo/smiling-cartoon-character_1026065-8527.jpg'}
                   className='h-[15rem] p-4 rounded-[100%]' 
                 ></img>
                 </div>
@@ -115,12 +115,12 @@ const fetchData = async () => {
                 </div>
             </div>
             <div className='mt-10'>
-            <hr className='h-[0.1rem] mb-[2rem] bg-gray-400'></hr>
+            <hr className='h-[0.1rem] mb-[2rem] bg-cyan-500'></hr>
              <p className='text-5xl shadow-lg py-4 rounded-xl bg-cyan-500'>Your Articles</p>
             
              <div className='mt-10 rounded-xl'>
             {data.map((journal, index) => (
-                <div key={index} className={`flex ${(index%2 === 0)?'flex-row':'lg:flex-row-reverse'} sm:p-4 my-[1rem] shadow-md text-[#333]`}>
+                <div key={index} className={`flex ${(index%2 === 0)?'flex-row':'lg:flex-row-reverse'} sm:p-4 my-[1rem] shadow-xl text-[#333]`}>
                     <img src={journal.image} alt='journal' className='h-[300px] rounded-lg hidden lg:block'/>
                     <div className='sm:px-6 h-[20rem] w-full'>
                         <Link to = {`/${journal._id}`}>
