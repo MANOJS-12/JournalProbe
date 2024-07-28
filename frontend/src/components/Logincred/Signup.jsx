@@ -142,9 +142,9 @@ const Signup = () => {
     <div>
       <div className=''>
       <div className='flex items-center justify-center rounded-2xl h-[86vh]'>
-      <div className='bg-white h-[35rem] flex rounded-xl'>
+      <div className='bg-white w-[55rem] h-[35rem] flex rounded-xl'>
              <div className='hidden w-[50%] md:block'>
-             <img src={loginImg}></img>  
+             <img className="w-full" src={loginImg}></img>  
              </div>
                <SignupForm/>
              </div>
