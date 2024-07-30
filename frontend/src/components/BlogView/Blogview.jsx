@@ -40,7 +40,7 @@ const JournalView = () => {
 
   return (
     <div className='w-[100%] flex justify-center items-center'>
-      <div className='text-[#333] sm:w-[90%] flex flex-col justify-center items-center mb-5 py-10 shadow-xl rounded-md'>
+      <div className='text-[#333] sm:w-[90%] flex flex-col justify-center items-center mb-5 py-10  rounded-md'>
         <div className=' text-5xl sm:text-5xl sm:w-[90%] mt-10 sm:px-5'>
           {blog.blogTitle}
         </div>
@@ -52,7 +52,7 @@ const JournalView = () => {
             <div className='text-l sm:text-3xl'>{blog.description}</div>
             <div className='flex items-center gap-5 justify-between sm:justify-normal'>
               <div className='flex flex-col items-end w-full'>
-                <div className='bg-gray-200 p-[1rem] rounded-md flex flex-col items-start'>
+                <div className='bg-transparent p-[1rem] rounded-md flex flex-col items-start'>
                   <div className='text-[1rem] text-gray-700'>Author : {blog.userName}</div>
                   <div className='text-[1rem] text-gray-700'>Date : {date}</div>
                 </div>
@@ -61,7 +61,8 @@ const JournalView = () => {
           </div>
         </div>
         <div className='w-[90%] text-left'>
-          <div dangerouslySetInnerHTML={{ __html: blog.journalContent }}></div>
+          <div dangerouslySetInnerHTML={{ __html: blog.journalContent }}></div> 
+          {/* // removes the tag and adds its functionality to it - dangerouslySetInnerHTMl */}
         </div>
       </div>
     </div>

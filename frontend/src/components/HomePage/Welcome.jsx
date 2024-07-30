@@ -23,7 +23,7 @@ const Welcome = () => {
                   repeat={Infinity}
               /></p> 
             <p className='py-2'>Join a Global Community of Scholars and Innovators in Pushing the Boundaries of Knowledge</p>
-            <div className='py-10 flex flex-start'><button className='w-[12rem] h-[3.5rem] bg-cyan-500 rounded-full' onClick={toExplore}>
+            <div className='py-10 flex flex-start'><button className='w-[12rem] h-[3.5rem] bg-cyan-500 rounded' onClick={toExplore}>
                 <span className='text-2xl'>Explore</span>
             </button>
             </div> 

@@ -18,9 +18,9 @@ const Navbar = () => {
   return (
     <>
         <header className='flex items-center justify-between border-b-4 border-cyan-500 '>
-             <span className='text-5xl'>J<span className='text-4xl mb-2 absolute'>P</span></span>
+             <span className='text-5xl'>J<span className='text-2xl mb-10 absolute'>P</span></span>
              <div className='flex flex-row gap-x-4 justify-center items-center'>
-             <button onClick={toPublish} className='flex bg-cyan-500 w-[15rem] h-[3rem] items-center justify-center rounded-full gap-x-3'>
+             <button onClick={toPublish} className='flex bg-cyan-500 w-[15rem] h-[3rem] items-center justify-center rounded gap-x-3'>
                 <FaFile className='text-3xl px-2'></FaFile>
                 <button className='text-xl'>Add your Journal</button>
              </button>
@@ -31,7 +31,8 @@ const Navbar = () => {
                   lg:flex flex-col lg:flex-row absolute lg:static gap-x-12 text-xl
                    top-8  ${(isMenuOpen)?'-left-12':'hidden'} px-5 lg:p-0 shadow-lg lg:shadow-none lg: overflow-hidden
                 `}>
-                    <Link to='/home'><li className='p-4 ml-3 lg:p-0 shadow-sm'>Home</li></Link>
+                  {/* for text color we can add in ul "text-color-range ? */}
+                    <Link to='/home'><li className='p-4 ml-3 lg:p-0 shadow-sm '>Home</li></Link>
                     <Link to='/journals'><li className='p-4 lg:p-0'>Journals</li></Link>
                     <Link to='/contactus'><li className='p-4 lg:p-0 transition-transform ease-in-out'>Contact us</li></Link> 
                     <Link to='/profile'><li className='p-4 lg:p-0'>Profile</li></Link>
@@ -42,7 +43,7 @@ const Navbar = () => {
              </button>
              </div>
         </header> 
-        <hr className='h-[0.1rem] flex justify-center bg-cyan-500 mt-4 shadow-2xl'></hr>  
+        <hr className='h-[0.1rem] flex justify-center bg-cyan-700 mt-4 shadow-2xl'></hr>  
     </>
   )
 }

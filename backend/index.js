@@ -3,7 +3,7 @@ const cors = require('cors')
 const bodyParser = require('body-parser');
 const mongoose = require("mongoose")
 const bcrypt = require('bcrypt');
-const cookieParser = require('cookie-parser');
+// const cookieParser = require('cookie-parser');
 const userRoutes = require('./routes/userRoutes');
 const journalRoutes = require('./routes/journalRoutes');
 const multer  = require('multer')
@@ -15,7 +15,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 app.use(bodyParser.json());
-app.use(cookieParser())
+// app.use(cookieParser())
 const saltRounds = 10;
 const dotenv = require('dotenv');
 dotenv.config({ path: './.env' });

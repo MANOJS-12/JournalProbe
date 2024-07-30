@@ -45,7 +45,7 @@ const SignupForm =()=>{
     <>
         <div
                   style={{'animation': 'slideInFromLeft 1s ease-out'}}
-                  className="md:w-[50%] bg-gradient-to-r rounded-lb-xl shadow-2xl overflow-hidden p-10 space-y-8 rounded-r-xl">
+                  className="md:w-[50%] bg-gradient-to-r  shadow-2xl overflow-hidden p-10 space-y-8 ">
                 <h2
                     style={{'animation': 'appear 2s ease-out'}}
                     className="text-center text-4xl font-extrabold text-gray-900"
@@ -141,8 +141,8 @@ const Signup = () => {
   return (
     <div>
       <div className=''>
-      <div className='flex items-center justify-center rounded-2xl h-[86vh]'>
-      <div className='bg-white w-[55rem] h-[35rem] flex rounded-xl'>
+      <div className='flex items-center justify-center h-[86vh]'>
+      <div className='bg-white w-[55rem] h-[35rem] flex '>
              <div className='hidden w-[50%] md:block'>
              <img className="w-full" src={loginImg}></img>  
              </div>

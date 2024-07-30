@@ -108,7 +108,7 @@ const fetchData = async () => {
                 <div className='flex flex-col ml-5'>
                     <p className='text-7xl'>{userName}</p>
                     <div className='py-2'><p className='0'>@{userName}</p></div>
-                    <button className='bg-cyan-500 py-2 rounded-lg' onClick={()=>{
+                    <button className='bg-cyan-500 py-2 rounded' onClick={()=>{
                         document.cookie = "journal_token='';max-age=0"
                         navigator('/login')
                     }}>Logout</button>
@@ -116,7 +116,7 @@ const fetchData = async () => {
             </div>
             <div className='mt-10'>
             <hr className='h-[0.1rem] mb-[2rem] bg-cyan-500'></hr>
-             <p className='text-5xl shadow-lg py-4 rounded-xl bg-cyan-500'>Your Articles</p>
+             <p className='text-5xl shadow-lg py-4 rounded bg-cyan-500'>Your Articles</p>
             
              <div className='mt-10 rounded-xl'>
             {data.map((journal, index) => (
@@ -138,7 +138,7 @@ const fetchData = async () => {
     
                          <div className={`flex ${(index%2===0)?'justify-end':'justify-start'} gap-x-[2rem]`}>
                             <button className='p-[0.7rem] text-2xl bg-cyan-500 rounded-md' onClick={()=>{handleEdit(journal._id)}}><TbEdit/></button>
-                            <button className='p-[0.7rem] text-2xl bg-red-500 rounded-md'><MdDeleteOutline onClick={()=>{handleDelete(journal.userName,journal.title)}}/></button>
+                            <button className='p-[0.7rem] text-2xl bg-red-600 rounded-md'><MdDeleteOutline onClick={()=>{handleDelete(journal.userName,journal.title)}}/></button>
                          </div>
                     </div>
                 </div>

@@ -37,12 +37,12 @@ body {
   margin: 0;
   background-color: #f3f4f5;
   /* background-color: rgb(217, 217, 217); */
-  background-image: url('C:\Users\Manoj S\Desktop\JournalProbe\JournalProbe\frontend\src\assets\Background.png');
+  background-image: url('C:\Users\Manoj S\Desktop\JournalProbe\JournalProbe\frontend\src\assets\bg.png');
   font-family: 'Satoshi-Bold', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-size: cover; /* Ensures the image covers the entire background */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-repeat: no-repeat;
   background-position: center center; /* Centers the image */
 }
 

@@ -10,7 +10,8 @@ function App() {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    const token = document.cookie.split('=')[0];
+    const token = document.cookie.split('=')[0];   
+    // gets the tokens from the cookies          
     if(token){
       navigate('/')
     }
@@ -23,7 +24,7 @@ function App() {
     <>
       <div className=''>
           <Navbar/>
-          <Outlet/>
+          <Outlet/>         
           <Footer/>
       </div>
     </>

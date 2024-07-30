@@ -166,7 +166,7 @@ const AddJournals = () => {
   return (
     <div className='p-4 '>
       <div className='flex items-center flex-col'>
-        <div className='text-4xl p-4'>Showcase Your Journals</div>
+        <div className='text-4xl p-4'>Creating New Journal !</div>
         <div className='flex flex-col gap-y-[2rem] w-[80%] mt-[1rem] items-center '>
           <div className='relative w-full sm:w-[70%]'>
             <input type='text' className='peer h-10 border-solid w-full border-b-2 border-gray-800 text-black bg-transparent placeholder-transparent focus:outline-none focus:border-gray-800' placeholder=''
@@ -185,7 +185,7 @@ const AddJournals = () => {
             <div className='flex justify-between w-full items-center'>
               <button className='flex items-center gap-x-[0.5rem] bg-cyan-500 p-[0.5rem] rounded-md '>
                 <span className='text-sm'>Generate using AI</span>
-                <FaWandMagicSparkles />
+                <FaWandMagicSparkles />  
               </button>
             </div>
             <ReactQuill
@@ -193,7 +193,7 @@ const AddJournals = () => {
               formats={formats}
               name='journalContent'
               placeholder='Write your Journal Content here...'
-              className='w-full p-2 border-2 border-gray-300 bg-white rounded-lg h-30'
+              className='w-full p-2 border-2 border-gray-300 bg rounded-lg h-30'
               value={journalContent} onChange={(e) => { setJournalContent(e) }}
               required
             />
@@ -228,7 +228,7 @@ const AddJournals = () => {
                 </div>
               </div>
           </div>
-          <button className='bg-cyan-500 px-3 py-3 rounded-lg mt-7 text-2xl shadow-xl' onClick={handleSubmit}>Add Post</button>
+          <button className='bg-cyan-500 px-3 py-3 rounded-lg mt-7 text-2xl shadow-xl' onClick={handleSubmit}>Publish !</button>
         </div>
       </div>
       <ToastContainer />
