@@ -79,9 +79,9 @@ const deleteJournal = async(req,res)=>{
     const title = req.body.title;
     try{
     const doc = await journalModel.deleteOne({userName:userName,title:title});
-    return res.status(200).json({error:false,message:"successfully deleted"})
+    return res.status(200).json({error:false,message:"Successfully Deleted"})
     }catch(err){
-        return res.status(404).json({error:true,message:"deletion failed"})
+        return res.status(404).json({error:true,message:"Deletion Failed"})
     }
 }
 

@@ -7,7 +7,7 @@ const checkUser = async(req, res, next) =>{
        const from_header = req.headers.authorization;
      
         if(!from_header){
-            return res.status(401).json({error:true, message:"invalid user"});
+            return res.status(401).json({error:true, message:"Invalid User"});
         }
         const token = req.headers.authorization.split(" ")[1];
         jwt.verify(token,"mysecretkey" ,async(err,user)=>{
@@ -17,7 +17,7 @@ const checkUser = async(req, res, next) =>{
             console.log("wait",user)
            const doc = await userModel.findOne({userName:user.userName});
            if(!doc){
-            res.status(400).json({error:true,message:'Invlaid user'});
+            res.status(400).json({error:true,message:'Invlaid User'});
            }
            req.user = {userName : doc.userName}
            next();
