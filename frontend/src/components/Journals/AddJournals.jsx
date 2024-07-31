@@ -183,7 +183,7 @@ const AddJournals = () => {
           </div>
           <div className='w-full sm:w-[70%] flex flex-col items-start gap-4 text-lg m-2'>
             <div className='flex justify-between w-full items-center'>
-              <button className='flex items-center gap-x-[0.5rem] bg-cyan-500 p-[0.5rem] rounded-md '>
+              <button onClick={handleGenerate} className='flex items-center gap-x-[0.5rem] bg-cyan-500 p-[0.5rem] rounded-md '>
                 <span className='text-sm'>Generate using AI</span>
                 <FaWandMagicSparkles />  
               </button>
