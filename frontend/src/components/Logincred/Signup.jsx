@@ -32,7 +32,7 @@ const SignupForm =()=>{
       })
       console.log(response)
       if(response.status === 200){
-        toast.success("registered successfully")
+        toast.success("Registered Successfully")
         document.cookie = `journal_token=${response.data.message.token}`
         navigate('/')
       }
