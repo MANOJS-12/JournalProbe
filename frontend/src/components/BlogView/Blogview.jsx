@@ -58,7 +58,7 @@ const JournalView = () => {
             <div className='flex items-center gap-5 justify-between sm:justify-normal'>
               <div className='flex flex-col items-end w-full'>
                 <div className='bg-transparent p-[1rem] rounded-md flex flex-col items-start'>
-                  <div className='text-[1rem] text-gray-700'>Author : {blog.userName}</div>
+                  <div className='text-[1rem] text-gray-700'>Author : {blog.author}</div>
                   <div className='text-[1rem] text-gray-700'>Date : {date}</div>
                 </div>
               </div>

@@ -86,7 +86,7 @@ const Journals = () => {
         <div>
             {filteredData.map((journal, index) =>
              (
-                <Link to={`/${journal._id}`} key={index} className={`flex ${(index%2 === 0)?'flex-column':'lg:flex-column-reverse'} sm:p-4 m-8 shadow-xl text-[#333]`}>
+                <Link to={`/${journal._id}`} key={index} className={`flex ${(index%2 === 0)?'flex-row':'lg:flex-row-reverse'} sm:p-4 m-8 shadow-xl text-[#333]`}>
                     <img src={journal.image} alt='journal' className='h-[300px] rounded-lg hidden lg:block'/>
                     <div className='sm:px-6 w-full'>
                         <div className='text-3xl w-full flex justify-start'>
