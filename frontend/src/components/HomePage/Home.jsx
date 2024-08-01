@@ -9,7 +9,7 @@ const Home = () => {
     <div className=''>
       <div className=''>
         <Welcome />
-        <About/> 
+        {/* <About/>  */}
         <PopJourn/>
       </div>
     </div>

@@ -72,6 +72,7 @@ const JournalView = () => {
               <button onClick={()=>backClick()} className='p-[1rem] bg-cyan-500 text-xl rounded-md'>Back to journals</button>
           </div>
         </div>
+        
       </div>
     </div>
   );
