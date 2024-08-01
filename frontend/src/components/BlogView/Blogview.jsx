@@ -1,11 +1,16 @@
 import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import axios from 'axios';
 
 const JournalView = () => {
   const { journalid } = useParams();
   const [blog, setBlogs] = useState({});
   const [date, setDate] = useState('');
+  const navigate = useNavigate();
+
+  const backClick = ()=>{
+    navigate('/journals');
+  }
 
   function getCookieValue(name) {
     const cookies = document.cookie.split(';');
@@ -63,6 +68,9 @@ const JournalView = () => {
         <div className='w-[90%] text-left'>
           <div dangerouslySetInnerHTML={{ __html: blog.journalContent }}></div> 
           {/* // removes the tag and adds its functionality to it - dangerouslySetInnerHTMl */}
+          <div className='flex items-center justify-center w-full mt-[2rem]'>
+              <button onClick={()=>backClick()} className='p-[1rem] bg-cyan-500 text-xl rounded-md'>Back to journals</button>
+          </div>
         </div>
       </div>
     </div>
