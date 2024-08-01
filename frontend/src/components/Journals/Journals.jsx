@@ -103,6 +103,7 @@ const Journals = () => {
                     </div>
                 </Link>
             ))}
+            
         </div>
     </>
   )

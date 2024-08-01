@@ -84,7 +84,7 @@ import { Link } from 'react-router-dom';
 
 const JournalCard = (props) => {
   return (
-    <div className='py-10'>
+    <div className='py-10' >
       <div className="relative flex w-80 flex-col rounded-xl bg-slate-50 bg-clip-border text-black shadow-xl">
         <img src={props.ima} className="relative mx-4 -mt-6 h-40 overflow-hidden rounded-xl bg-blue-gray-500 bg-clip-border text-white shadow-lg shadow-blue-gray-500/40 bg-cyan-500" />
         <div className="p-6">
@@ -155,7 +155,7 @@ const PopJourn = () => {
     <div>
       <section className='p-4 rounded-3xl flex justify-center'>
         <div className='text-center'>
-          <div className='w-[78rem] h-[40rem] flex justify-center items-center mb-6 rounded-xl py-9 flex-col shadow-2xl border-l-4'>
+          <div className='w-[78rem] h-[40rem] flex justify-center items-center mb-6 rounded-xl py-9 flex-col  border-l-4'>
             <div className='mb-[4rem]'>
               <span className='text-4xl py-2 px-4 bg-cyan-500 rounded shadow-xl'>Popular Journals</span>
             </div>
@@ -180,3 +180,4 @@ const PopJourn = () => {
 
 export default PopJourn;
 
+ 

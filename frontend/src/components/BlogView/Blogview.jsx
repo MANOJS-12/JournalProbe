@@ -64,6 +64,7 @@ const JournalView = () => {
           <div dangerouslySetInnerHTML={{ __html: blog.journalContent }}></div> 
           {/* // removes the tag and adds its functionality to it - dangerouslySetInnerHTMl */}
         </div>
+        
       </div>
     </div>
   );
