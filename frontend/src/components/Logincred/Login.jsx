@@ -45,10 +45,10 @@ const LoginForm =()=>{
                     style={{'animation': 'appear 2s ease-out'}}
                     className="text-center text-4xl font-extrabold text-gray-900"
                 >
-                    Login
+                    LOGIN
                 </h2>
                 <p style={{'animation': 'appear 3s ease-out'}} className="text-center text-gray-900">
-                    Sign in to your account
+                    SIGN IN YOUR ACCOUNT
                 </p>
                     <form method="POST" action="#" className="space-y-6">
                         <div className="relative">
@@ -65,7 +65,7 @@ const LoginForm =()=>{
                         <label
                             className="absolute left-0 -top-3.5 text-gray-500 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-500 peer-focus:text-sm"
                             htmlFor="email"
-                            >User Name</label
+                            >USER NAME</label
                         >
                         </div>
                         <div className="relative">
@@ -82,28 +82,28 @@ const LoginForm =()=>{
                         <label
                             className="absolute left-0 -top-3.5 text-gray-900 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-cyan-500 peer-focus:text-sm"
                             htmlFor="password"
-                            >Password</label
+                            >PASSWORD</label
                         >
                         </div>
                         <div className="flex items-center justify-between">
                         <label className="flex items-center text-sm text-gray-200">
                        
                         </label>
-                        <a className="text-sm text-cyan-500 hover:underline" href="#"
+                        {/* <a className="text-sm text-cyan-500 hover:underline" href="#"
                             >Forgot your password?</a
-                        >
+                        > */}
                         </div>
                         <button
-                        className="w-full py-2 px-4 bg-cyan-500 hover:bg-cyan-600 rounded-md shadow-lg text-white font-semibold transition duration-200"
+                        className="w-full py-2 px-4 bg-cyan-500 hover:bg-cyan-600 rounded-md shadow-lg text-black font-semibold transition duration-200"
                         type="submit"
                         onClick={(e)=>handleSubmit(e)}
                         // onClick={(e)=>handleEvents(e)}
                         >
-                        Sign In
+                        SIGN IN
                         </button>
                     </form>
                         <div className="text-center text-gray-900"> Don't have an account?
-                        <button className="text-cyan-500 px-2 hover:underline" onClick={toSignup}>Sign up</button>
+                        <button className="text-cyan-700 px-2 hover:underline" onClick={toSignup}>SIGN UP</button>
                      </div>
                      <ToastContainer/>
                 </div>

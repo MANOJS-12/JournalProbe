@@ -59,7 +59,7 @@ const JournalCard = (props) => {
         <section className='p-4 rounded-3xl flex  justify-center'>
           <div className='text-center'>
             <div className=' w-[78rem] h-[40rem] flex justify-center items-center mb-6 rounded-xl py-9 flex-col  border-l-4 '>
-              <div className='mb-[4rem]'><span className='text-4xl py-2  px-4 bg-cyan-500 rounded shadow-xl'>Popular Journals</span></div>
+              <div className='mb-[4rem]'><span className='text-4xl py-2  px-4 bg-cyan-500 rounded shadow-xl'>POPULAR ARTICLES</span></div>
               <div className='w-[90%] h-[90%] overflow-x-auto flex gap-x-10 no-scrollbar'>
                 {
                   data.map((item, index) => {
@@ -76,5 +76,3 @@ const JournalCard = (props) => {
 
 export default PopJourn
 
-
- 

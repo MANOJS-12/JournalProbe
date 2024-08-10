@@ -22,7 +22,7 @@ const Navbar = () => {
              <div className='flex flex-row gap-x-4 justify-center items-center'>
              <button onClick={toPublish} className='flex bg-cyan-500 w-[15rem] h-[3rem] items-center justify-center rounded gap-x-3'>
                 <FaFile className='text-3xl px-2'></FaFile>
-                <button className='text-xl'>Add your Journal</button>
+                <button className='text-xl'>ADD JOURNAL</button>
              </button>
              
              {/* hidden lg: */}
@@ -32,10 +32,10 @@ const Navbar = () => {
                    top-8  ${(isMenuOpen)?'-left-12':'hidden'} px-5 lg:p-0 shadow-lg lg:shadow-none lg: overflow-hidden
                 `}>
                   {/* for text color we can add in ul "text-color-range ? */}
-                    <Link to='/home'><li className='p-4 ml-3 lg:p-0 shadow-sm '>Home</li></Link>
-                    <Link to='/journals'><li className='p-4 lg:p-0'>Journals</li></Link>
-                    <Link to='/contactus'><li className='p-4 lg:p-0 transition-transform ease-in-out'>Contact us</li></Link> 
-                    <Link to='/profile'><li className='p-4 lg:p-0'>Profile</li></Link>
+                    <Link to='/home'><li className='p-4 ml-3 lg:p-0 shadow-sm '>HOME</li></Link>
+                    <Link to='/journals'><li className='p-4 lg:p-0'>JOURNALS</li></Link>
+                    <Link to='/contactus'><li className='p-4 lg:p-0 transition-transform ease-in-out'>GET IN TOUCH</li></Link> 
+                    <Link to='/profile'><li className='p-4 lg:p-0'>PROFILE</li></Link>
                 </ul>
              </div>
              <button onClick={()=>{setIsMenuOpen(!isMenuOpen)}}>
