@@ -9,8 +9,6 @@ const Home = () => {
     <div className=''>
       <div className=''>
         <Welcome />
-        {/* <About/>  */}
-        {/* <PopJourn/> */}
       </div>
     </div>
   )
